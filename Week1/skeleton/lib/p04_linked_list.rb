@@ -67,10 +67,8 @@ class LinkedList
     @tail.prev.next = new_link
 
     new_link.next = @tail
-    @tail.prev = new_link
     new_link.prev = @tail.prev
-    @tail.prev = new_link
-    
+    @tail.prev = new_link    
 
     new_link
   end
